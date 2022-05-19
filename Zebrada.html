@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<title>Tabela Zebrada</title>
+		<meta charset="utf-8" />
+
+		<style>
+
+            body { background-color: aquamarine;}
+			.cor1 {background-color: rgb(199, 222, 135);}
+			.cor2 {background-color: rgb(183, 255, 88);}
+
+		</style>
+		
+	</head>
+	<body>
+        <h1>Tabela Zebrada</h1>
+
+		<table border="1">
+			<thead>
+				<tr>
+					<th>Nome:</th>
+					<th>Cidade:</th>
+					<th>Edtado</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Lucas</td>
+					<td>Guarulhos</td>
+					<td>São Paulo</td>
+				</tr>
+				<tr>
+					<td>Leandro</td>
+					<td>Pouso Alegre</td>
+					<td>Minas Gerais</td>
+				</tr>
+				<tr>
+					<td>Gabriel</td>
+					<td>João Pessoa</td>
+					<td>Paraíba</td>
+				</tr>
+				<tr>
+					<td>João Pedro</td>
+					<td>Recife</td>
+					<td>Pernambuco</td>
+				</tr>
+				<tr>
+					<td>Livia</td>
+					<td>Rio de Janeiro</td>
+					<td>Rio de Janeiro</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<script>
+            var linhas = document.getElementsByTagName("tr");
+
+                for(var i = 0 ; i < linhas.length ; i++) {
+
+                 if (i % 2 == 0)    
+                    linhas[i].setAttribute("class" , "cor1");
+                  else
+                     linhas[i].setAttribute("class" , "cor2");
+                }
+
+         </script>
+		
+	</body>
+</html>
